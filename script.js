@@ -39,7 +39,7 @@ function gameengine() {
         gameoversound.play()
         musicsound.pause()
         inputDir = { x: 0, y: 0 }
-        alert("Game Over. Press any button to play again!")
+        alert("Game Over. Press enter button to play again!")
         snakearr = [{ x: 13, y: 15 }]
         musicsound.play()
         score = 0
@@ -90,7 +90,6 @@ function gameengine() {
 //main logic
 window.requestAnimationFrame(main)
 window.addEventListener('keydown', e => {
-    inputDir = { x: 0, y: 1 }
     movesound.play()
     switch (e.key) {
         case "ArrowUp":
